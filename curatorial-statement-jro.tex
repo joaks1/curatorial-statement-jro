@@ -1,0 +1,166 @@
+\documentclass[10pt]{article}
+%\usepackage{anysize}
+%\papersize{11in}{8.5in}
+%\marginsize{1in}{1in}{.5in}{.5in}
+\textwidth = 6.5 in
+\textheight = 9 in
+\oddsidemargin = 0.0 in
+\evensidemargin = 0.0 in
+\topmargin = -0.5 in
+\headheight = 0.35 in
+\headsep = 0.15 in
+\topskip = 0 in
+\footskip = 0.5 in
+\pagenumbering{arabic}
+\usepackage{setspace}
+\usepackage[usenames]{color}
+\usepackage[fleqn]{amsmath}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{indentfirst}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{ragged2e}
+\usepackage{xspace}
+\usepackage{parskip}
+\usepackage{tabulary}
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\hypersetup{pdfborder={0 0 0}, colorlinks=true, urlcolor=blue, linkcolor=black}
+\usepackage[format=plain, labelsep=period, justification=raggedright, singlelinecheck=true, skip=2pt, font={footnotesize,sf}, labelfont=bf]{caption}
+\usepackage{titlesec}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{ifthen}
+\usepackage{wrapfig}
+
+%\usepackage[round]{natbib}
+%\bibliographystyle{evolution}
+\usepackage[style=nature]{biblatex}
+\bibliography{references}
+
+%% Format headers and footers %%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+%\lhead{\ifthenelse{\value{page}=1}{}{\sffamily\footnotesize Jamie Oaks}}
+\lhead{\sffamily \emph{\docTitle} \\ Jamie R. Oaks}
+%\chead{\ifthenelse{\value{page}=1}{{\scshape \docTitle} \\ Jamie Richard Oaks}{\sffamily\footnotesize \docTitle}}
+%\rhead{\ifthenelse{\value{page}=1}{}{\sffamily\footnotesize \today}}
+\rhead{\sffamily \today}
+\cfoot{\sffamily\footnotesize Page \thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%% Format section titles %%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\refname{Peer-reviewed Publications}
+
+\titleformat{\section}[hang]
+    {\large\sffamily\bfseries}
+    {\S\ \thesection.}{.5em}{}[]
+\titlespacing{\section}
+    {0mm}{1.0ex plus .1ex minus .1ex}{-0.5ex}
+
+\titleformat{\subsection}[hang]
+    {\large\sffamily\itshape}
+    {\S\ \thesection.}{.5em}{}[]
+\titlespacing{\subsection}
+    {0mm}{1.0ex plus .1ex minus .1ex}{-0.5ex}
+
+\titleformat{\subsubsection}[runin]
+    {\sffamily\bfseries}
+    {\S\ \thesection.}{.5em}{}[.---]
+\titlespacing{\subsubsection}
+    {\parindent}{0pt}{0pt}
+%    {\parindent}{1.0ex plus .1ex minus .1ex}{0pt}
+
+%% Format list environments %%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}}
+\renewcommand{\labelitemi}{$\circ$}
+
+\newenvironment{myEnumerate}{
+  \begin{enumerate}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.5em}}
+  {\end{enumerate}}
+
+\newenvironment{myItemize}{
+  \begin{itemize}
+    \setlength{\leftskip}{-4mm}
+    \setlength{\itemsep}{0.25em}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0.5em}}
+  {\end{itemize}}
+
+%% Basic formatting and spacing %%%%%%%%%%%%%%%%%%%%%
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5em}
+
+%% My functions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ignore}[1]{}
+\newcommand{\addTail}[1]{\textit{#1}.---}
+\newcommand{\super}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\textrm{#1}}}}
+\newcommand{\dC}{\ensuremath{^\circ{\textrm{C}}}}
+\newcommand{\tableSubItem}{\addtolength{\leftskip}{1em} \labelitemi \xspace}
+\newcommand{\myHangIndent}{\hangindent=5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\docTitle}{Curatorial Statement\xspace}
+\begin{document}
+\raggedright
+\singlespacing
+
+My duty as a collection-based scientist is to \textbf{\textit{advocate the use,
+maintainence, and value of scientific research collections for understanding
+the biodiversity of our planet.}}
+A major challenge of curation is often striking a balance between the use and
+long-term preservation of research material.
+However, I believe we stand upon the precipice of a dramatic shift in how
+biodiversity data is distributed and used by scientist that will greatly
+reduce the negative impacts to the longevity of specimens.
+
+\section*{The Future of Biodiversity Collections}
+I believe we are very near a future where a typical museum specimen will be
+associated with a  of digital information that will be available in real-time 
+to scientist around the world.
+geographic location, habitat, genome sequence, high-resolution, three-dimensional digital scan and x-ray.
+While such rich digital informortion will never supplant the need for preserving
+the physical specimen, I believe the data will truly revolutionize the role of
+biodiversity collections in society.
+The longevity of specimens will be extended, because most specimen-based
+research can be conducted without ever using the
+will greatly reduce the frequency at which the specimen is used.
+If a specimen is ever damaged or lost blah
+Such rich data will greatly expand the types of research that can be addressed.
+Reduced use.
+Backup.
+justify the relevance to the public, funding agencies, and donors.
+The collections that are at the forefront of embracing this shift will benefit
+
+While this future may seem far off, the collections that are at the forefront
+of embracing this shift will balh.
+
+In my experience blah
+there are many ways to begin this shift
+make sure all current data is digital (genbank, treebase, dryad, citations,
+digital photographs and audio recordings).
+Digitizing in the field in realtime (photographs) to reduce information that is lost and corrupted along way
+
+\section*{Collection-Based Research}
+While my primary research questions focus on specific taxa \ldots
+an important aspect of my work will always be broad biodiversity survey stuff.
+Funding from NSF BSFI Nat Geo
+
+The SNOMNH Herpetology collection is strong in blah
+My research program would expand holdings of Old World blah, specifically
+Southeast Asia.
+
+\section*{Museum-Based Education}
+Similar to curation, technology will greatly enhance museum-based education.
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
